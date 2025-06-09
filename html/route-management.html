@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Route Management</title>
+  <link rel="stylesheet" href="http://localhost:5500/styles/route-management.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="navbar-brand">Bus Scheduler</div>
+    <nav class="navbar-links">
+      <a href="home.html">Home</a>
+      <a href="crew_selection.html">Crew selection</a>
+      <a href="route-management.html" class="active">Route Management</a>
+      <div class="profile-container">
+        <div class="profile-icon" id="profileToggle">👤</div>
+        <div class="profile-dropdown" id="profileDropdown">
+          <a href="profile.html">View Profile</a>
+          <a href="settings.html">Settings</a>
+          <a href="#">Logout</a>
+        </div> 
+      </div>
+    </nav>
+  </header>
+
+  <div class="map-container">
+    <div id="sidebar">
+      <h3>Route Options</h3>
+      <ul>
+        <li onclick="showRouteList()">All Routes</li>
+        <li onclick="openNewRouteForm()">Add New Route</li>
+        <li onclick="showOptimizationHistory()">Optimization History</li>
+      </ul>
+      <button onclick="optimizeRoute()">Optimize Route</button>
+    </div>
+
+    <div id="map"></div>
+
+    <div class="top-toolbar">
+      <input type="text" id="searchInput" placeholder="Search routes or stops..." />
+    </div>
+
+    <div class="legend-panel">
+      <h4>Legend & Filters</h4>
+      <label><input type="checkbox" checked> High-frequency routes</label>
+      <label><input type="checkbox"> Overlapping routes</label>
+      <label><input type="checkbox"> Traffic density</label>
+      <label><input type="checkbox"> Demand zones</label>
+    </div>
+
+    <button class="draw-route-btn" onclick="startDrawing()">Draw New Route</button>
+  </div>
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="http://localhost:5500/script/route-management.js"></script>
+</body>
+</html>

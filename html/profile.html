@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Profile | Automated Bus Scheduling</title>
+  <link rel="stylesheet" href="http://localhost:5500/styles/profile.css" />
+  <link rel="stylesheet" href="styles/https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-left">
+      <h2>Bus Scheduler</h2>
+    </div>
+    <div class="nav-right" >
+        <a href="home.html" class="logout-btn">Home</a>
+      <a href="logout.html" class="logout-btn">Logout</a>
+    </div>
+  </nav>
+
+  <section class="profile-container">
+    <div class="profile-card" data-reveal>
+      <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="User" class="avatar" />
+      <h2 class="username">Mr.XYZ</h2>
+      <p class="role">Driver / Conductor</p>
+    </div>
+
+    <div class="profile-details" data-reveal>
+      <details open>
+        <summary>Personal Information</summary>
+        <p><strong>Email:</strong> XYZ@example.com</p>
+        <p><strong>Phone:</strong> +91 9876543210</p>
+        <p><strong>Employee ID:</strong> BUS12345</p>
+      </details>
+
+      <details>
+        <summary>Recent Schedules</summary>
+        <ul>
+          <li>Route 14A - 10th June | Morning Shift</li>
+          <li>Route 7C - 12th June | Night Shift</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>Preferences</summary>
+        <p>Prefers: Morning Shifts, Route 14B, Zone A</p>
+      </details>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Automated Bus Scheduling. All rights reserved.</p>
+  </footer>
+
+  <script src="http://localhost:5500/script/profile.js"></script>
+</body>
+</html>

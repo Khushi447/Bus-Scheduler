@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Settings | Automated Bus Scheduling</title>
+  <link rel="stylesheet" href="http://localhost:5500/styles/settings.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="navbar-brand">Bus Scheduler</div>
+    <nav class="navbar-links">
+      <a href="home.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contacts</a>
+      <a href="settings.html" class="active">Settings</a>
+      <div class="profile-container">
+        <div class="profile-icon" id="profileToggle">👤</div>
+        <div class="profile-dropdown" id="profileDropdown">
+          <a href="profile.html">View Profile</a>
+          <a href="settings.html">Settings</a>
+          <a href="#">Logout</a>
+        </div> 
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" data-aos="fade-down">
+    <h1><i class="fas fa-cogs"></i> Settings</h1>
+    <p>Manage your profile, preferences, and security all in one place.</p>
+  </section>
+
+  <!-- Settings Tabs -->
+  <main class="settings-container">
+    <div class="tabs">
+      <button class="tab-btn active" data-tab="profile"><i class="fas fa-user-circle"></i> Profile</button>
+      <button class="tab-btn" data-tab="preferences"><i class="fas fa-sliders-h"></i> Preferences</button>
+      <button class="tab-btn" data-tab="security"><i class="fas fa-lock"></i> Security</button>
+    </div>
+
+    <div class="tab-content active" id="profile" data-aos="fade-up">
+      <h2>Profile Settings</h2>
+      <form>
+        <label>Full Name</label>
+        <input type="text" placeholder="John Doe" />
+        <label>Email</label>
+        <input type="email" placeholder="john@example.com" />
+        <label>Phone</label>
+        <input type="tel" placeholder="+91 98765 43210" />
+        <label>Profile Picture</label>
+        <input type="file" />
+        <button type="submit" class="save-btn">Save Changes</button>
+      </form>
+    </div>
+
+    <div class="tab-content" id="preferences" data-aos="fade-up">
+      <h2>Preferences</h2>
+      <form>
+        <label>Theme</label>
+        <select>
+          <option>Light (Default)</option>
+          <option>Dark</option>
+        </select>
+        <label>Language</label>
+        <select>
+          <option>English</option>
+          <option>Hindi</option>
+        </select>
+        <label>Notification Settings</label>
+        <input type="checkbox" checked /> Email Alerts<br/>
+        <input type="checkbox" checked /> SMS Alerts
+        <button type="submit" class="save-btn">Update Preferences</button>
+      </form>
+    </div>
+
+    <div class="tab-content" id="security" data-aos="fade-up">
+      <h2>Security Settings</h2>
+      <form>
+        <label>Current Password</label>
+        <input type="password" />
+        <label>New Password</label>
+        <input type="password" />
+        <label>Confirm New Password</label>
+        <input type="password" />
+        <button type="submit" class="save-btn">Change Password</button>
+      </form>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 Automated Bus Scheduling and Route Management. All rights reserved.</p>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="http://localhost:5500/script/settings.js"></script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Linked Duty Scheduling</title>
+  <link rel="stylesheet" href="http://localhost:5500/styles/linked-duty.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="navbar-brand">Bus Scheduler</div>
+    <nav class="navbar-links">
+      <a href="home.html">Home</a>
+      <a href="crew_selection.html">Crew Selection</a>
+      <a href="linked-duty.html" class="active">Linked Duty</a>
+       <div class="profile-container">
+         <div class="profile-icon" id="profileToggle">👤</div>
+         <div class="profile-dropdown" id="profileDropdown">
+          <a href="profile.html">View Profile</a>
+          <a href="settings.html">Settings</a>
+          <a href="#">Logout</a>
+        </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="benefits">
+      <h2>Benefits of Linked Duty Scheduling</h2>
+      <ul>
+        <li>✅ Better accountability</li>
+        <li>✅ Reduced scheduling conflicts</li>
+      </ul>
+    </section>
+
+    <h1>Linked Duty Scheduling</h1>
+    <form id="dutyForm">
+      <label for="busId">Bus ID:</label>
+      <input type="text" id="busId" required />
+
+      <label for="driverId">Driver ID:</label>
+      <input type="text" id="driverId" required />
+
+      <label for="conductorId">Conductor ID:</label>
+      <input type="text" id="conductorId" required />
+
+      <label for="contact">Contact Details:</label>
+      <input type="text" id="contact" required />
+
+      <label for="shiftName">Shift Name:</label>
+      <input type="text" id="shiftName" required />
+
+      <label for="startTime">Start Time:</label>
+      <input type="time" id="startTime" required />
+
+      <label for="endTime">End Time:</label>
+      <input type="time" id="endTime" required />
+
+      <label for="breakTime">Break Times:</label>
+      <input type="text" id="breakTime" placeholder="e.g., 1:00 PM - 1:30 PM" required />
+
+      <button type="submit">Assign</button>
+    </form>
+
+    <p id="feedback" class="feedback"></p>
+  </main>
+
+  <script src="http://localhost:5500/script/linked-duty.js"></script>
+</body>
+</html>

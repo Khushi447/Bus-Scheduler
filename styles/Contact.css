@@ -1,0 +1,216 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4fbff;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #dbeeff;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 20px;
+  color: #004d80;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: #004d80;
+}
+
+.navbar-links a.active,
+.navbar-links a:hover {
+  color: #0077cc;
+  text-decoration: underline;
+}
+
+.user-dropdown {
+  position: relative;
+}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 35px;
+  right: 0;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 6px;
+}
+
+.user-dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  padding: 10px 15px;
+  display: block;
+  text-decoration: none;
+  color: #004d80;
+}
+
+/* Hero */
+.hero {
+  background: #e6f4ff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 32px;
+  color: #005a99;
+  margin-bottom: 10px;
+}
+
+/* Contact Section */
+.contact-section {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+  gap: 40px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.contact-form,
+.contact-info {
+  flex: 1;
+  min-width: 300px;
+}
+
+.contact-form h2,
+.contact-info h2 {
+  color: #004d80;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+.submit-btn {
+  padding: 12px 24px;
+  background-color: #0099cc;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.contact-info img {
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+/* Accordion FAQ */
+.faq {
+  background: #f0faff;
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.faq h2 {
+  text-align: center;
+  color: #005a99;
+  margin-bottom: 30px;
+}
+
+.accordion-btn {
+  width: 100%;
+  padding: 15px;
+  text-align: left;
+  border: none;
+  background: #eaf6ff;
+  font-weight: bold;
+  cursor: pointer;
+  border-bottom: 1px solid #ddd;
+}
+
+.accordion-btn:hover {
+  background: #d4f0ff;
+}
+
+.accordion-content {
+  padding: 15px;
+  display: none;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background: #e6f5ff;
+  font-size: 14px;
+  color: #555;
+}
+
+.profile-container {
+  position: relative;
+  display: inline-block;
+}
+
+.profile-icon {
+  font-size: 12px;
+  cursor: pointer;
+  padding: 6px 10px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  border: 2px solid #b3d9f2;
+  transition: transform 0.3s ease;
+}
+
+.profile-icon:hover {
+  transform: scale(1.05);
+  background-color: #f0f8ff;
+}
+
+.profile-dropdown {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  background: #ffffff;
+  border-radius: 6px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+  display: none;
+  min-width: 160px;
+  z-index: 1000;
+}
+
+.profile-dropdown a {
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #004d80;
+  font-size: 14px;
+}
+
+.profile-dropdown a:hover {
+  background-color: #e6f5ff;
+  color: #0077cc;
+}

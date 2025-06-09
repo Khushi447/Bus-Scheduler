@@ -1,0 +1,282 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #ffffff;
+  min-height: 100vh;
+  position: relative;
+  background: #0a0a19;
+  overflow-x: hidden;
+}
+
+/* Background image related to Indian public buses with blur and light overlay */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=1600&q=80') no-repeat center center / cover;
+  filter: blur(8px) brightness(1.1);
+  opacity: 0.7;
+  z-index: -1;
+}
+
+/* Navbar styles - distinct and solid background with shadow */
+header {
+  width: 100%;
+  position: fixed;
+  top: -100px;
+  left: 0;
+  background: #001f3f; /* dark navy blue */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+  transition: all 0.7s ease;
+  z-index: 1000;
+  backdrop-filter: none; /* no blur here to keep navbar crisp */
+}
+
+header.visible {
+  top: 0;
+}
+
+header.scrolled {
+  background: #001a33; /* slightly darker on scroll */
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.logo {
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: #00bcd4;
+  letter-spacing: 1px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.8rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: color 0.3s;
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+
+nav a:hover,
+nav a:focus {
+  color: #03a9f4;
+  background-color: rgba(3, 169, 244, 0.15);
+  outline: none;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: 150px;
+  padding-bottom: 80px;
+  min-height: 100vh;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 3.6rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #00e6e6;
+  text-shadow: 1px 1px 5px #000;
+}
+
+.hero p {
+  font-size: 1.4rem;
+  font-weight: 300;
+  margin-bottom: 2.5rem;
+  color: #e0f7fa;
+  text-shadow: 1px 1px 4px #000;
+  line-height: 1.5;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+}
+
+.cta-buttons a {
+  padding: 0.9rem 1.8rem;
+  border-radius: 30px;
+  background-color: #03a9f4;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  box-shadow: 0 3px 12px rgba(3, 169, 244, 0.5);
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.cta-buttons a:hover,
+.cta-buttons a:focus {
+  background-color: #0288d1;
+  box-shadow: 0 4px 20px rgba(2, 136, 209, 0.7);
+  outline: none;
+}
+
+.features {
+  background-color: rgba(0, 0, 0, 0.65);
+  padding: 4rem 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 2.3rem;
+  max-width: 1200px;
+  margin: 0 auto 4rem;
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.8);
+}
+
+.feature {
+  background-color: #121225;
+  padding: 2.2rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.85);
+  transition: transform 0.35s ease;
+  cursor: default;
+}
+
+.feature:hover,
+.feature:focus-within {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 30px rgba(0, 188, 212, 0.7);
+}
+
+.feature h3 {
+  color: #00bcd4;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  font-size: 1.35rem;
+}
+
+.feature p {
+  color: #ccc;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.extra-info {
+  max-width: 900px;
+  margin: 3rem auto;
+  text-align: center;
+  color: #b3e5fc;
+  font-size: 1.15rem;
+  padding: 0 1rem;
+  text-shadow: 1px 1px 3px #000;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: #001a33;
+  color: #bbb;
+  border-top: 1px solid #004d73;
+  font-size: 0.9rem;
+  user-select: none;
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.6rem;
+  }
+  .hero p {
+    font-size: 1.2rem;
+  }
+  nav ul {
+    gap: 1rem;
+  }
+}
+
+
+.logo {
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: #00bcd4;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Bus icon styles */
+.bus-icon {
+  width: 28px;
+  height: 28px;
+  stroke-width: 2.5;
+  flex-shrink: 0;
+}
+
+.profile-container {
+  position: relative;
+  display: inline-block;
+}
+
+.profile-icon {
+  font-size: 12px;
+  cursor: pointer;
+  padding: 6px 10px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  border: 2px solid #b3d9f2;
+  transition: transform 0.3s ease;
+}
+
+.profile-icon:hover {
+  transform: scale(1.05);
+  background-color: #f0f8ff;
+}
+
+.profile-dropdown {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  background: #ffffff;
+  border-radius: 6px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+  display: none;
+  min-width: 160px;
+  z-index: 1000;
+}
+
+.profile-dropdown a {
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #004d80;
+  font-size: 14px;
+}
+
+.profile-dropdown a:hover {
+  background-color: #e6f5ff;
+  color: #0077cc;
+}
+
+

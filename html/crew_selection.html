@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Crew Options | Bus Scheduler</title>
+  <link rel="stylesheet" href="http://localhost:5500/styles/crew_selection.css"/>
+</head>
+<body>
+  <header class="navbar fade-down">
+    <div class="logo">Bus Scheduler</div>
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="#">Logout</a></li>
+         <div class="profile-container">
+        <div class="profile-icon" id="profileToggle">👤</div>
+        <div class="profile-dropdown" id="profileDropdown">
+          <a href="profile.html">View Profile</a>
+          <a href="settings.html">Settings</a>
+          <a href="#">Logout</a>
+        </div>
+    
+
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Hello Crew! 👋</h1>
+    <p class="subtext">Choose what you'd like to do today. Everything’s set up to make your tasks easier.</p>
+
+    <div class="options">
+      <div class="card" >
+        <h2>🔗<a href="linked-duty.html"> Linked Scheduling</a></h2>
+        <p>View and manage your schedule linked with other team members. Perfect for connected routes and shifts.</p>
+      </div>
+      <div class="card" >
+        <h2>🔓<a href="unlinked-duty.html">Unlinked Scheduling</a> </h2>
+        <p>Manage your personal schedule independently. Great for solo assignments or flexible shifts.</p>
+      </div>
+      <div class="card" >
+        <h2>🗺️<a href="route-management.html"> Route Management</a></h2>
+        <p>Organize or update your assigned routes and get insights for smoother journeys.</p>
+      </div>
+    </div>
+  </main>
+
+  <script src="http://localhost:5500/script/crew_selection.js"></script>
+</body>
+</html>

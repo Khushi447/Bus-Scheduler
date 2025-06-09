@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Learn More About Us</title>
+  <link rel="stylesheet" href="http://localhost:5500/styles/about.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css"/>
+</head>
+<body>
+  <header class="navbar">
+    <div class="navbar-brand"> Bus Scheduler</div>
+    <nav class="navbar-links">
+      <a href="home.html">Home</a>
+      <a href="about.html" class="active">About</a>
+       <div class="profile-container">
+        <div class="profile-icon" id="profileToggle">👤</div>
+        <div class="profile-dropdown" id="profileDropdown">
+          <a href="profile.html">View Profile</a>
+          <a href="settings.html">Settings</a>
+          <a href="#">Logout</a>
+        </div> 
+      </div>
+    </nav>
+  </header>
+
+  <main class="about-container">
+    <h1 data-aos="fade-down">Learn More About Us</h1>
+    <p class="intro" data-aos="fade-up">
+      Welcome to the <strong>Automated Bus Scheduling and Route Management System</strong> — a smart and intuitive platform for public transport optimization in Patna.
+    </p>
+
+    <div class="accordion-container">
+      <!-- Linked Duty -->
+      <div class="accordion-item" data-aos="fade-up">
+        <button class="accordion-btn">
+          <i class="fas fa-link"></i> Linked Duty Scheduling
+        </button>
+        <div class="accordion-content">
+          <img src="images/linked-duty.jpg" alt="Linked Duty" />
+          <p>Linked Duty Scheduling pairs drivers and conductors into coordinated shifts for seamless operations. It helps with:</p>
+          <ul>
+            <li>Improved accountability</li>
+            <li>Fewer conflicts</li>
+            <li>Smoother crew communication</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Unlinked Duty -->
+      <div class="accordion-item" data-aos="fade-up">
+        <button class="accordion-btn">
+          <i class="fas fa-unlink"></i> Unlinked Duty Scheduling
+        </button>
+        <div class="accordion-content">
+          <img src="images/unlinked-duty.jpg" alt="Unlinked Duty" />
+          <p>Unlinked Duties are shifts not tied to specific routes. Crew can browse and request these duties. Benefits include:</p>
+          <ul>
+            <li>Flexible shift claiming</li>
+            <li>Dynamic calendar and filtering</li>
+            <li>Duty tracking by crew</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Route Management -->
+      <div class="accordion-item" data-aos="fade-up">
+        <button class="accordion-btn">
+          <i class="fas fa-map-signs"></i> Route Management
+        </button>
+        <div class="accordion-content">
+          <img src="images/route-management.jpg" alt="Route Map" />
+          <p>Route Management helps visualize and optimize city-wide routes with tools like:</p>
+          <ul>
+            <li>Interactive Patna map</li>
+            <li>Draw & define new paths</li>
+            <li>AI-based route optimization</li>
+            <li>Conflict resolution for overlaps</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Services -->
+      <div class="accordion-item" data-aos="fade-up">
+        <button class="accordion-btn">
+          <i class="fas fa-cogs"></i> Our Services
+        </button>
+        <div class="accordion-content">
+          <img src="images/services.jpg" alt="Services" />
+          <p>We provide tools that streamline public transportation planning:</p>
+          <ul>
+            <li>Smart shift and route allocation</li>
+            <li>Live optimization dashboards</li>
+            <li>User role and security control</li>
+            <li>Clean, accessible UI for all stakeholders</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 Automated Bus Scheduling and Route Management. All rights reserved.</p>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="http://localhost:5500/script/about.js"></script>
+</body>
+</html>

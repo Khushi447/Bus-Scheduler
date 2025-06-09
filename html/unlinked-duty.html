@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Unlinked Duty Scheduling</title>
+  <link rel="stylesheet" href="http://localhost:5500/styles/unlinked-duty.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="navbar-brand">Bus Scheduler</div>
+    <nav class="navbar-links">
+      <a href="home.html">Home</a>
+      <a href="crew_selection.html">Crew selection</a>
+      <a href="unlinked-duty.html" class="active">Unlinked Duty</a>
+        <div class="profile-container">
+         <div class="profile-icon" id="profileToggle">👤</div>
+         <div class="profile-dropdown" id="profileDropdown">
+          <a href="profile.html">View Profile</a>
+          <a href="settings.html">Settings</a>
+          <a href="#">Logout</a>
+        </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <div class="breadcrumb">Home > Scheduling > Unlinked Duty Scheduling</div>
+    <h1>Unlinked Duty Scheduling</h1>
+    <p class="definition">
+      ✅"Unlinked Duties" refers to driver/conductor shifts or duties that are not yet assigned to a specific route or schedule. This page allows you to view, manage, and claim these unassigned shifts.
+    </p>
+
+    <section class="filter-panel">
+      <input type="date" id="filterDate" />
+      <select id="filterShift">
+        <option value="">All Shifts</option>
+        <option>Morning</option>
+        <option>Evening</option>
+        <option>Night</option>
+      </select>
+      <select id="filterDepot">
+        <option value="">All Depots</option>
+        <option>Depot A</option>
+        <option>Depot B</option>
+        <option>Depot C</option>
+      </select>
+      <input type="text" id="searchInput" placeholder="Search by Duty ID, Route..." />
+      <button onclick="clearFilters()">Clear Filters</button>
+    </section>
+
+    <section class="duty-list">
+      <div class="duty-card" id="duty1">
+        <h3>Duty ID: D-101</h3>
+        <p>Shift Time: 08:00 - 12:00</p>
+        <p>Duration: 4 hrs</p>
+        <p>Depot: Depot A</p>
+        <p>Vehicle: Mini Bus</p>
+        <p>Status: <span class="status unassigned">Unassigned</span></p>
+        <button onclick="requestDuty('D-101')">Request Duty</button>
+      </div>
+      <!-- Add more dummy duties as needed -->
+    </section>
+
+    <div id="requestModal" class="modal hidden">
+      <div class="modal-content">
+        <p id="modalText"></p>
+        <button onclick="confirmRequest()">Confirm</button>
+        <button onclick="closeModal()">Cancel</button>
+      </div>
+    </div>
+
+    <div id="toast" class="toast">Duty requested successfully!</div>
+
+    <footer class="footer">
+      <a href="#">Help</a> | <a href="#">FAQs</a>
+    </footer>
+  </main>
+
+  <script src="http://localhost:5500/script/unlinked-duty.js"></script>
+</body>
+</html>
