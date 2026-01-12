@@ -1,6 +1,6 @@
 # Automated Bus Scheduling and Route Management System
 
-## 📌 Overview
+##  Overview
 
 The **Automated Bus Scheduling and Route Management System** is a web-based application designed to simplify and automate the scheduling of buses, drivers, and conductors while efficiently managing routes. The system reduces manual effort, avoids scheduling conflicts, and improves overall operational efficiency for transport authorities.
 
@@ -8,7 +8,7 @@ This project was developed with a clean UI, modular structure, and a focus on re
 
 ---
 
-## 🎯 Objectives
+##  Objectives
 
 * Automate bus duty scheduling to reduce human errors
 * Manage linked and unlinked duties efficiently
@@ -18,7 +18,7 @@ This project was developed with a clean UI, modular structure, and a focus on re
 
 ---
 
-## 🧩 Key Features
+##  Key Features
 
 ### 1. Linked Duty Scheduling
 
@@ -50,7 +50,7 @@ This project was developed with a clean UI, modular structure, and a focus on re
 
 ---
 
-## 🛠️ Technologies Used
+##  Technologies Used
 
 * **Frontend:** HTML, CSS, JavaScript
 * **Design:** Responsive UI with consistent theming
@@ -58,7 +58,7 @@ This project was developed with a clean UI, modular structure, and a focus on re
 
 ---
 
-## 👥 Target Users
+##  Target Users
 
 * Bus Drivers
 * Bus Conductors
@@ -66,7 +66,7 @@ This project was developed with a clean UI, modular structure, and a focus on re
 
 ---
 
-## 🚀 Advantages of the System
+##  Advantages of the System
 
 * Saves time by automating scheduling tasks
 * Reduces scheduling conflicts and manual errors
@@ -75,7 +75,7 @@ This project was developed with a clean UI, modular structure, and a focus on re
 
 ---
 
-## 🔮 Future Enhancements
+##  Future Enhancements
 
 * Backend integration with database support
 * Real-time bus tracking using GPS
@@ -85,7 +85,7 @@ This project was developed with a clean UI, modular structure, and a focus on re
 
 ---
 
-## 📂 Project Structure (Basic)
+##  Project Structure (Basic)
 
 * `index.html` – Main landing page
 * `linked-duty.html` – Linked duty scheduling
@@ -96,7 +96,7 @@ This project was developed with a clean UI, modular structure, and a focus on re
 
 ---
 
-## 📝 Conclusion
+##  Conclusion
 
 The **Automated Bus Scheduling and Route Management System** is a practical solution for modern public transport management. It combines automation, clarity, and usability to address real-world scheduling and routing challenges effectively.
 
